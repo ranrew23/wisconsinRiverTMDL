@@ -48,7 +48,7 @@ for (crop in c("CORN", "SOYB", "ALFA")) {
         cal_table = rbind(cal_table, row)
         write.csv(cal_table, paste(wd, "bio_calibration.csv", sep="\\"), row.names=F)
     }
-    substr(plant.dat[plant.dat.ind + 1], 3, 7) = format(original_bio_e, digits=2, nsmall=2)
+    a(plant.dat[plant.dat.ind + 1], 3, 7) = format(original_bio_e, digits=2, nsmall=2)
     writeLines(plant.dat, paste(wd, "plant.dat", sep="\\"))
 }
 
